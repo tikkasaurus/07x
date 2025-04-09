@@ -87,7 +87,7 @@
     </div>
 
     <script>
-        const words = ['invest', 'invent', 'involve', 'invoice'];
+        const words = ['invest', 'invent', 'involve'];
         let currentWordIndex = 0;
         let commonPrefix = 'inv';
         let isDeleting = false;
@@ -98,7 +98,7 @@
             
             if (!isDeleting) {                
                 if (currentText === currentWord) {
-                    const timer = currentText === 'invoice' ? 10 : 1500;
+                    const timer = 1500;
                     isDeleting = true;
                     setTimeout(typeWriter, timer);
                     return;
